@@ -199,7 +199,7 @@ public class MTSCore {
 
 
 		GameRegistry.addRecipe(
-				MTSItemSigns.woodenSign.me.splitStack(1),
+				MTSItemSigns.woodenSign.me.splitStack(3),
 				new Object[] {
 						"XXX",
 						"XXX",

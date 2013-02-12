@@ -5,7 +5,7 @@ import java.util.List;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemSign;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.MathHelper;
@@ -14,14 +14,12 @@ import eurymachus.mts.core.MTSBlocks;
 import eurymachus.mts.core.MTSInit;
 import eurymachus.mts.tileentities.TileEntityMTSign;
 
-public class ItemMTSigns extends Item {
+public class ItemMTSigns extends ItemSign {
 	public ItemMTSigns(int i) {
 		super(i);
 		this.setHasSubtypes(true);
-		this.setMaxStackSize(1);
 		this.setMaxDamage(0);
 		this.setNoRepair();
-		this.setCreativeTab(CreativeTabs.tabDecorations);
 	}
 
 	private String[] signNames = new String[] {
